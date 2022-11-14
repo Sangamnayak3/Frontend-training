@@ -1,3 +1,5 @@
+ASSIGNMENT 1
+
 Q1. What is JSON?
 __  JSON stands for JavaScript Object Notation. It is a format for structuring data. This format is used by different web applications to communicate with each other. It is the replacement of the XML data exchange format. It is easy to struct the data compare to XML. It supports data structures like arrays and objects and the JSON documents that are rapidly executed on the server.
 
@@ -18,3 +20,13 @@ __  A NoSQL originally referring to non SQL or non relational is a database that
 
 Q5. What is IIS?
 __  Internet Information Services (IIS) for Windows Server is a flexible, secure and manageable Web server for hosting anything on the Web.
+
+ASSIGNMENT 2
+
+Q1. How to display images in title bar?
+__  To display an image in title bar, we either save the image in the root directory of the webserver, or create a folder in the root directory called images, and save the image in that folder. Then we need to add a <link> element to the "index.html" file, after the <title> element, like this: 
+<link rel="icon" href="icon_path" type="image/icon type">.
+Now we need to save the "index.html" file and reload it in the browser.
+
+Q2. What is the purpose of "alt" attribute of img tag?
+__ The <img> alt attribute is used to specify the alternate text for an image. It is useful when the image is not displayed. It is used to give alternative information for an image.
