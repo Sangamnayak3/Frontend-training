@@ -1,0 +1,14 @@
+img{
+      width: 200px;
+     height: 200px;
+  }
+
+div{
+     border : 1px  solid ;
+     padding : 5px;
+     margin: 5px;
+     float: left;
+     width: 350;
+     text-align: center;
+     border-left-width: 20px ;
+}
