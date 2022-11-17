@@ -1,0 +1,19 @@
+1. What is the difference between <head> and <header> tags?
+__The main difference is that the <head> element is for META data and the <header> element is for actual content. The HTML <head> tag is a container for metadata and links to scripts and stylesheets. The <header> tag is a semantic container used to designate contents that is introductory or navigational in nature.
+
+
+2. How to allow only numbers in text box?
+__Using <input type="number">
+The standard solution to restrict a user to enter only numeric values is to use <input> elements of type number. It has built-in validation to reject non-numerical values.
+__Using pattern attribute
+Alternatively, you can use the pattern attribute to specify a regular expression that should match the provided input.
+__Using oninput event
+Another solution is to use the oninput property to processes input events on the <input> elements.
+
+
+3. Create a home page using HTML5 semantic tags: header, footer, nav, section and article.
+__Refer Assignment 1 Q3
+
+4. What is cookie? Why is it used?
+__Cookies are a convenient way to carry information from one session on a website to another, or between sessions on related websites, without having to burden a server machine with massive amounts of data storage.
+__Cookies are sent with the response header from the server to a browser and they are stored in the browser for persisting data there these common attributes of cookies.
