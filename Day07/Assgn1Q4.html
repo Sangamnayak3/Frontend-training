@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" />
+        <style>
+            .f
+            {
+                text-align: center;
+               border:2px solid blue ;
+               width: 400px;
+               height: 370px;
+               margin-left: 450px;
+            }
+            .l
+            {
+                color: red;
+            }
+            .i
+            {
+               border: 1px solid red; 
+               width: 380px;
+               margin-left: 10px;
+               
+            }
+            .button
+            {
+                color: blue;
+                background-color: white;
+                border: 2px solid blue;
+            }
+            .button:hover
+            {
+                color: white;
+                background-color: blue;
+            }
+            #id
+            {
+                width: 380px;
+                align-content: center;
+                margin-left: 10px;
+            }
+        </style>	
+	</head>
+    <body>
+        <div >
+            <h2 style="text-align:center;">CRUD-OPERATIONS</h2><br/>
+            <form class="f">
+               <p><label class="l">Employee Number :</label>
+                <input class="i" type="text" /></p>
+                <p><label class="l">Employee Name :</label>
+                <input class="i" type="text"/></p>
+                <p><label class="l">Employee Role :</label>
+                <input class="i" type="text"/></p>
+                <a href="#" class="button">CREATE</a>
+                <a href="#" class="button">READ</a>
+                <a href="#" class="button">UPDATE</a>
+                <a href="#" class="button">DELETE</a> <br/>
+                <a href="#" id="id" class="button expanded">SUBMIT TO SERVER</a>
+            </form>
+            </div>
+    </body>
+</html>
