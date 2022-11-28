@@ -1,0 +1,14 @@
+1. Why do you use position property in CSS?
+
+2. What is the difference between position property values :  absolute / relative;
+
+1__The CSS position property is used to set position for an element. It is also used to place an element behind another and also useful for scripted animation effect.
+We can position an element using the top, bottom, left and right properties. These properties can be used only after position property is set first. A position element's computed position property is relative, absolute, fixed or sticky.
+
+2__Relative Position: Setting the top, right, bottom, and left properties of an element with position: relative; property will cause it to adjust from its normal position. The other objects or elements will not fill the gap. Absolute Position: An element with position: absolute; will cause it to adjust its position with respect to its parent.
+
+
+5. How to hide an element uisng CSS?
+
+__diplay:none----- it doesnt take the space if its none
+  visibility:hidden ---- it takes the space even if its none

@@ -1,0 +1,36 @@
+<html>
+    <head></head>
+    <body>
+        <h1>Reading Customer Data</h1>
+        <fieldset>
+            Customer Name: <input id="cn" name="cn" type="text"/><br/><br/>
+            Join Date: <input id="jd" name="jd" type="date"><br/><br/>
+            Favourite Color: <input id="fc" name="fc" type="color"><br/><br/>
+            <input type="button" value="Save data" onclick="fn_saveData()"/>
+            <input type="button" value="Remove data" onclick="fn_removeData()"/>
+           <a href="Assgn1Q2.html"> <input type="button" value="Get data" /></a>
+        </fieldset>
+        <br/><br/>
+        <script>
+            function fn_saveData()
+            {
+                var tcn = document.getElementById("cn")
+                var djd = document.getElementById("jd")
+                var cfc = document.getElementById("fc")
+                var dataobj={};
+                dataobj.Customer_Name= tcn.value;
+                dataobj.joining_date= djd.value;
+                dataobj.favourite_color= cfc.value;
+                var rstr= JSON.stringify(dataobj);
+                localStorage.setItem("customerdata",rstr);
+                alert("t");
+            }
+
+            function fn_removeData()
+            {
+                localStorage.removeItem("customerdata");
+                alert("Customer data removed from local storage");
+            }
+        </script>
+    </body>
+</html>

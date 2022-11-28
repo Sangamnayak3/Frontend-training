@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <style>
+            div
+            {
+                border: 2px solid black;
+                box-shadow: 2px 2px 4px black;
+            }
+            figure
+            {
+                border: 1px solid black;
+                padding: 0px;
+                text-align: center;
+                width: 300px;
+                height: 250px;
+                box-shadow: 2px 2px 3px black;
+            }
+            img
+            {
+                width: 200px;
+                height: 200px;
+            }
+            figcaption
+            {
+                margin-top: 10px;
+            }
+            .container
+            {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            @media only screen and  (max-width:600px)
+            {
+                .cc
+                {
+                    background-color: aqua;
+                    font-style: italic;
+                    
+                }
+                .i
+                {
+                    background-color: aqua;
+                }
+                .container
+                {
+                    background-color: blanchedalmond;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" > 
+        <figure class="cc">
+            <img class="i" src="images/xr.jpg"/>
+            <figcaption>iphone xr</figcaption>
+        </figure>
+        <figure class="cc">
+            <img class="i" src="images/xs.jpg"/>
+            <figcaption >iphone xs</figcaption>
+        </figure>
+        <figure class="cc">
+            <img class="i" src="images/12.jpg"/>
+            <figcaption>iphone 12</figcaption>
+        </figure>
+        <figure class="cc">
+            <img class="i" src="images/12 pro.jpg"/>
+            <figcaption>iphone 12 pro</figcaption>
+        </figure>
+        <figure class="cc">
+            <img class="i" src="images/13.jpg"/>
+            <figcaption>iphone 13</figcaption>
+        </figure>
+        <figure class="cc">
+            <img class="i" src="images/14pro.jpg"/>
+            <figcaption>iphone 14 pro</figcaption>
+        </figure>
+        </div>
+    </body>
+</html>

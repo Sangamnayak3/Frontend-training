@@ -1,0 +1,33 @@
+<html>
+    <head>
+       
+    </head>
+    <body id="b1">
+        <h1>Displaying Customer Data</h1>
+        
+           
+            <p id="p1"></p>
+        
+        <script>
+          
+                var dstr= localStorage.getItem("customerdata");
+                
+                if(dstr == null)
+                {
+                    var pobj = document.getElementById("p1");
+                    pobj.innerHTML = "Welcome, Guest User.<br/>Your DOJ is empty.";
+                    var bobj=document.getElementById("b1");
+                    pobj.style.backgroundColor="white";                
+                }
+                
+                var dataobj= JSON.parse(dstr);
+                
+                var pobj=document.getElementById("p1");
+                pobj.innerHTML = "WELCOME " + dataobj.Customer_Name + ".</br>" +"Your DOJ is "+ dataobj.joining_date + ".";
+                var bobj=document.getElementById("b1");
+                bobj.style.backgroundColor= dataobj.favourite_color;
+                
+	   
+        </script>
+    </body>
+</html>
