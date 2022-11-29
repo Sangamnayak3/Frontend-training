@@ -1,0 +1,11 @@
+1.  What is clearfix class in bootstrap? Why do we use it?
+__ A clearfix is a way for an element to automatically clear or fix its elements so that it does not need to add additional markup. It is generally used in float layouts where elements are floated to be stacked horizontally.
+
+2.  How to hide the html tags using Bootstrap?
+__ To hide the html tags, we can use a class named invisble.
+
+3. What is spinner? How to create spinner using Boostrap?
+__ Bootstrap “spinners” can be used to show the loading state in your projects. They’re built only with HTML and CSS, meaning you don’t need any JavaScript to create them.
+ex.<div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+   </div> 

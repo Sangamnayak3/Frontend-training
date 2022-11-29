@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"  rel="stylesheet"  />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+        <style>
+            #s1
+            {
+                font-weight: bold;
+                font-size: large
+            }
+            #s2
+            {
+                font-weight: lighter;
+            }
+            #s3
+            {
+                float : right;
+                font-weight: bold;
+            }
+            h3
+            {
+                margin-top: 10px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container text-center border text-bg-dark">
+            <p class="display-4">Employee Performance Progress</p>
+        </div>
+        <br/>
+        <div class="container border border-dark p-3">
+            <h3>Daily Progress</h3>
+            <br/>
+            <span id="s1">Project Workforce</span>
+            <span id="s3" class="text-danger">32.21%<i class="bi bi-arrow-down"></i></span>
+            <div  class="progress" style="height: 20px;">
+                <div  class="progress-bar  bg-primary"  style="width:32.21%;"></div>		 
+            </div>
+            <span id="s2">15% of required workforce needed.</span>
+            <br/>  <br/>
+            <span id="s1">Project Velocity</span>
+            <span id="s3" class="text-success">50.21%<i class="bi bi-arrow-up"></i></span>     
+            <div  class="progress" style="height: 20px;">				 
+                    <div  class="progress-bar bg-primary" style="width:50.21%;"></div>
+            </div>
+            <span id="s2">30% of required velocity needed.</span>
+            <br/><br/>
+            <span id="s1">Critical Hours</span> 
+            <span id="s3" class="text-success">80.21%<i class="bi bi-arrow-up"></i></span>         
+            <div  class="progress" style="height: 20px;">				 
+                    <div  class="progress-bar bg-primary"  style="width:80.21%;"></div>
+            </div> 
+            <span id="s2">20% of required hours needed.</span>
+        </div>
+        <br/>
+        <div class="container alert alert-warning">
+            <h3>INSTRUCTIONS</h3>
+            <ol>
+                <li>All are requested to maintain silence.</li>
+                <li>All are requested to maintain decorum.</li>
+                <li>All are requested to maintain discipline.</li>
+            </ol>
+        </div>
+    </body>
+</html>
