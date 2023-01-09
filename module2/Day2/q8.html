@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <style>
+    .highlighted{
+        background-color: lightblue;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Operations on arrays</h1>
+</header>
+
+<main>
+    <button onclick="displayTable()">Show Table</button>
+    <table id="tech_table">
+        <tr class="highlighted">
+            <th>Course</th>
+            <th>Course</th>
+            <th>Course</th>
+            <th>Course</th>
+        </tr>
+    </table>
+</main>
+
+<script>
+
+    const tableObj = document.getElementById("tech_table");
+
+    const techArray = ["HTML5", "CSS3", "jQuery", "Angular JS", "Bootstrap", "HTML5", "CSS3", "jQuery", "Angular JS", "Bootstrap", "HTML5", "CSS3", "jQuery"];
+
+    function displayTable(){
+
+
+        let tech_data = "";
+
+        tableObj.style.border = "2px solid black";
+        tableObj.style.margin = "10px";
+
+        for(let i = 0; i < techArray.length;  i++){			
+            if(i%4==0){
+                tech_data += "<tr>";
+            }		      
+
+            tech_data += "<td>"	 +  techArray[i] +  "</td>";	
+
+            if(i%4==3){
+                tech_data += "</tr>";
+            }
+        }
+
+        tableObj.innerHTML += tech_data;
+    }
+</script>
+
+</body>
+</html>

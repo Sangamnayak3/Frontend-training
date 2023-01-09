@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <style>
+            .btn
+            {
+                background-color: blue;
+                color: white;
+                border: 3px solid black
+            }
+            .bold
+            {
+                font-weight:bolder ;
+            }
+            .underline
+            {
+                text-decoration: underline ;
+            }
+            .italic
+            {
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Applying Styles using jQuery</h1>
+	<hr> 
+	 
+	 <input type="button" class="btn" id="b1"  value="B" />
+	 <input type="button" class="btn" id="b2"  value="U" />
+	 <input type="button" class="btn" id="b3"  value="I" />
+     <br/><br/>
+     <p style="border:3px solid blue;padding: 10px;">This is a Test Paragraph. This is a Test Paragraph. This is a Test Paragraph. This is a Test Paragraph. This is a Test Paragraph. This is a Test Paragraph. This is a Test Paragraph. This is a Test Paragraph. This is a Test Paragraph. This is a Test Paragraph.This is a Test Paragraph. This is a Test Paragraph. This is a Test Paragraph. This is a Test Paragraph. This is a Test Paragraph. This is a Test Paragraph. This is a Test Paragraph. This is a Test Paragraph. This is a Test Paragraph. This is a Test Paragraph.This is a Test Paragraph. This is a Test Paragraph. </p>
+
+     <script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+     <script>
+
+        $("#b1").click(function()
+        {
+            $("#b1").toggleClass("btn");
+            $("p").toggleClass("bold");
+        });
+
+        $("#b2").click(function()
+        {
+            $("#b2").toggleClass("btn");
+            $("p").toggleClass("underline");
+        });
+
+        $("#b3").click(function()
+        {
+            $("#b3").toggleClass("btn");
+            $("p").toggleClass("italic") ;           
+        });
+     </script>
+    </body>
+</html>

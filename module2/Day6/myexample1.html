@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic table in JS</title>
+</head>
+<body>
+    <input type="button" value="Generate Table" onclick="GenerateTable()" />
+<hr />
+<div id="dvTable"></div>
+ 
+ <script type="text/javascript">
+    function GenerateTable() {
+        var customers = new Array();
+        customers.push(["Customer Id", "Name", "Country"]);
+        customers.push([1, "Ranbir", "India"]);
+        customers.push([2, "Jhon", "US"]);
+        customers.push([3, "Kemal", "Turkey"]);
+        customers.push([4, "Kabir", "Canada"]);
+ 
+        var table = document.createElement("TABLE");
+        table.border = "1";
+ 
+        var columnCount = customers[0].length;
+ 
+        var row = table.insertRow(-1);
+        for (var i = 0; i < columnCount; i++) {
+            var headerCell = document.createElement("TH");
+            headerCell.innerHTML = customers[0][i];
+            row.appendChild(headerCell);
+        }
+ 
+    
+        for (var i = 1; i < customers.length; i++) {
+            row = table.insertRow(-1);
+            for (var j = 0; j < columnCount; j++) {
+                var cell = row.insertCell(-1);
+                cell.innerHTML = customers[i][j];
+            }
+        }
+ 
+        var dvTable = document.getElementById("dvTable");
+        dvTable.innerHTML = "";
+        dvTable.appendChild(table);
+    }
+</script>
+ 
+</body>
+</html>

@@ -1,0 +1,55 @@
+
+<html >
+<head>
+    <title>String Methods</title>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h2>String Methods</h2>
+    <hr/>
+    <button id="b1">Get Data</button>
+    <table id="t1" border="2">
+    </table>
+
+    <script>
+
+        let customerObj = {  cardNumber  :   1234456778997896,  chName : "xyz abc",  cardType : "Visa",  expireMonth : 12,  expireYear : 2023};
+        const shortMonthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun","Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
+
+        console.log();
+
+        $(document).ready(function(){
+
+            var Newtxtjq = customerObj.chName.replace(/\b[a-z]/g, function(txtjq) {
+    		    return txtjq.toUpperCase();
+		    });
+            
+            // var Newtxtjq1 = customerObj.cardNumber.replace(/[0-9]/g, function(txtjq) {
+    		//     return txtjq.toUpperCase();
+		    // });
+            var masked = "****-****-****-";
+            var numb =customerObj.cardNumber.toString();
+            masked += numb[12];
+            masked += numb[13];
+            masked += numb[14];
+            masked += numb[15]; 
+
+           $("#b1").click(function(){
+
+            var str="<tr><td>Credit Card Number</td><td>"+masked+"</td></tr>";
+
+            str+="<tr><td>Card Holder Name</td><td>"+Newtxtjq+"</td></tr>";
+
+            str+="<tr><td>Card Type</td><td>"+customerObj.cardType.toUpperCase()+"</td></tr>";
+
+            str+="<tr><td>Expiry Date</td><td>"+shortMonthNames[customerObj.expireMonth-1]+" "+customerObj.expireYear+"</td></tr>";
+
+            $("#t1").append(str);
+
+           }); 
+
+
+        });
+    </script>
+</body>
+</html>

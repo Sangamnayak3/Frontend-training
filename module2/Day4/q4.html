@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map methods</title>
+</head>
+<body>
+    
+    <script>
+        
+        var citiesArray  = [ "Hyderabad", "Mumbai",  "Bangalore", "Gurgaon"];
+        function toUpper(str)
+        {
+            return str.toUpperCase();
+        }
+        var ucase=citiesArray.map(toUpper);
+        var threeChar=citiesArray.map(function(str){return str.slice(0,3);});
+        var replaceA=citiesArray.map((str)=>{return str.replaceAll('a','@');});
+        alert("City names in uppercase : "+ucase);
+        alert("City names 3 Character  : "+threeChar);
+        alert("City names 'a' replace with '@' : "+replaceA);
+    </script>
+</body>
+</html>

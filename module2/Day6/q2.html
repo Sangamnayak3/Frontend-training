@@ -1,0 +1,37 @@
+<html>
+    <head></head>
+    <body>
+        <h2>Finf Employee Details</h2>
+        Search Value:
+        <input type="text" id="t1"/>
+        <input type="button" onclick="button1()" value="Find by EmpNo"/>
+        <input type="button" onclick="button2()" value="Find by Job"/>
+        <table  id="ta1"  border="2"  width="500"  cellpadding="12" cellspacing="">
+            <tr>
+                    <th>Empno</th>
+                    <th>Ename</th>
+                    <th>Job</th>
+                    <th>Salary</th>
+                    <th>Deptno</th>
+            </tr>
+        </table>
+        <script>
+            var array = [{Empno : 1, Ename : "Bruce", Job : "Analyst", Salary : 600000, Deptno : 303}, 
+            {Empno : 2, Ename : "Bruce", Job : "Analyst", Salary : 900000, Deptno : 303},
+            {Empno : 3, Ename : "Clark", Job : "Sr. Analyst", Salary : 1500000, Deptno : 303},
+            {Empno : 4, Ename : "Robin", Job : "Sr. Analyst", Salary : 1500000, Deptno : 303},
+            {Empno : 5, Ename : "Lex", Job : "HR", Salary : 1800000, Deptno : 303},
+            {Empno : 6, Ename : "Harley", Job : "Director", Salary : 3000000, Deptno : 303}];
+
+            var text = document.getElementById("t1");
+            var table = document.getElementById("ta1");
+
+            function button1()
+            {
+                let ar = array.filter(item => item.Job == "HR");
+                console.log(ar);
+            }
+            
+        </script>
+    </body>
+</html>

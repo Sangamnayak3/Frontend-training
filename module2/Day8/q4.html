@@ -1,0 +1,59 @@
+<!-- Create a web page to perform the following operations using jquery:	
+a.  Get product details from user:		Product Name, Unit Price, Quantity
+b.  Display total amount based on price and qty
+c.   If the qty is greater than 10,  give 10% discount on total amount -->
+
+
+<html>
+    <head>
+        <script  src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    </head>
+    <body>
+        <h2 style="text-align:center">Blling Page</h2><hr/><br/>
+        <fieldset>
+            <label>Product Name</label>
+            <input type="text" id="t1"/><br/><br/>
+            <label>Price per Unit</label>
+            <input type="text" id="t2"/><br/><br/>
+            <label>Quantity</label>
+            <input type="text" id="t3"/><br/><br/>
+            <button onclick="fn_calculate()">Total Amount</button><br/><br/>
+            <!-- <label>Total</label>
+            <input type="text" id="t4" readonly/> -->
+            <p id="p1"></p>
+
+            <script>
+                var paraObj = $("#p1");
+                function fn_calculate()
+                {
+                    if($("#t3").val()<=10 && $("#t3").val()>=1)
+                        {
+                            let w = $("#t1").val();
+                            let x = $("#t2").val();
+                            let y = $("#t3").val();
+                            x = parseInt(x);
+                            y = parseInt(y);
+                            z = x*y;
+                            $("#p1").val(z);
+                            paraObj.html("Your total amount for " + y + " " + w + "'s is : Rs. " + z);
+                        }
+                    else if($("#t3").val()>10)
+                        {
+                            let w = $("#t1").val();
+                            let x = $("#t2").val();
+                            let y = $("#t3").val();
+                            x = parseInt(x);
+                            y = parseInt(y);
+                            z =(x*y) - 0.1*(x*y);
+                            $("#p1").val(z);
+                            paraObj.html("Your total amount for " + y + " " + w + "'s is : Rs. " + z);
+                        }
+                    else
+                        {
+                            alert("Enter a valid Quantity");
+                        }
+                }
+            </script>
+    </fieldset>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!-- Create a web page to perform all math operations 
+    (Add, Sub, Multiply) using JavaScript. (Refer the Image) -->
+
+    <html>
+        <head></head>
+        <body>
+            <h2>Mathematical Operations</h2><hr/>
+            <fieldset>
+                First Number : <input type="number" id="i1"/><br/><br/>
+                Second Number : <input type="number" id="i2"/><br/><br/>
+                <input type="button" value="Add" onclick="add()">
+                <input type="button" value="Sub" onclick="sub()">
+                <input type="button" value="Multiply" onclick="mul()"><br/><br/>
+                <p id="p1"></p>               
+            </fieldset>
+            <script>
+                function add()
+                {
+                    var fnum = document.getElementById("i1");
+                    var snum = document.getElementById("i2");
+                    var para = document.getElementById("p1");
+                    var x = parseInt(fnum.value);
+                    var y = parseInt(snum.value);
+                    para.innerHTML = "Result : " + (x + y);
+                }
+                function sub()
+                {
+                    var fnum = document.getElementById("i1");
+                    var snum = document.getElementById("i2");
+                    var para = document.getElementById("p1");
+                    para.innerHTML = "Result : " + (fnum.value - snum.value);
+                }
+                function mul()
+                {
+                    var fnum = document.getElementById("i1");
+                    var snum = document.getElementById("i2");
+                    var para = document.getElementById("p1");
+                    para.innerHTML = "Result : " + fnum.value * snum.value;
+                }
+            </script>
+        </body>
+    </html>

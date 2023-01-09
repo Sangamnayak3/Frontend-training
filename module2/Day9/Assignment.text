@@ -1,0 +1,27 @@
+Q1a What is eval() method in JavaScript? How to use it? Check with an example? 
+    What is the difference between   "this" and  $(this) in jquery programming?
+__  The eval() method evaluates or executes an argument.If the argument is an expression, eval() evaluates the  expression. If the argument is one or more JavaScript statements, eval() executes the statements.
+Example:
+let x = 10;
+let y = 20;
+let text = "x * y";
+let result = eval(text);
+
+In JavaScript, this keyword is used to refer to the object it belongs to. The value that this stores is the current execution context of the JavaScript program.Thus, when used inside a function this‘s value will change depending on how that function is defined, how it is invoked and the default execution context.
+   $(this): It also refers to the object it belongs to. Basically, both are the same. But when this keyword is used inside $(), then it becomes a jQuery object, and now we can use all properties of jQuery on this method.	
+
+Q1b What is the purpose of prev() and next() methods in jQuery?
+__  The prev() method returns the previous sibling element of the selected element.
+    Related methods:
+    prevAll() - returns all previous sibling elements of the selected element.
+    prevUntil() - returns all previous sibling elements between two given arguments. 
+    The next() method returns the next sibling element of the selected element.
+    Related methods:
+    nextAll() - returns all next sibling elements of the selected element.
+    nextUntil() - returns all next sibling elements between two given arguments.
+
+Q1c How to delete all rows in a table except first row?
+__  If you want to delete all table rows except the first row or header of the table, you have to use the jQuery    remove() function with the slice() function. Also, you have to pass ‘1’ as the argument of the slice() function.
+Example:
+$("table tr").slice(1).remove();
+

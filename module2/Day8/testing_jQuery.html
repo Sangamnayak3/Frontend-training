@@ -1,0 +1,19 @@
+<!-- Create a web page to change text color of all paragraphs in the document using jqeury -->
+
+<html>
+    <head>
+        <script  src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    </head>
+    <body>
+        <button onclick="fn_changeColor()">Edit</button>
+        <p id="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit minus quas, consectetur porro corrupti quia labore quaerat reprehenderit ex commodi atque, sapiente voluptatem tempore, tenetur nemo repudiandae at consequatur odit?</p>
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, dolores quidem quas sunt pariatur voluptates quisquam quam ipsum, aliquid, rem obcaecati blanditiis. At omnis enim porro sapiente voluptate, aspernatur laboriosam?</p>
+        <script>
+            function fn_changeColor()
+            {
+                alert("hi");
+                $("p").css("color","blue");
+            }            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!-- 3. Create a web page to implement the following requirement:
+		a.  Read product details from user
+		b. Add a new row to table with the product details -->
+
+
+<html>
+    <head>
+        <script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    </head>
+    <body>
+        <fieldset>
+        <legend style="font-weight:bolder; font-size: xx-large;">Customer Log</legend>
+
+
+        <label>Customer Name</label>
+        <input type="text" id="t1"/><br/><br/>
+        <label>Product Name</label>
+        <input type="text" id="t2"/><br/><br/>
+        <label>Price</label>
+        <input type="text" id="t3"/><br/><br/>
+        <label>Quantity</label>
+        <input type="text" id="t4"/><br/><br/> 
+        <button id="b1" onclick="fn_submitData()">Submit</button><br/><br/>
+
+
+        <table id="tab1"border=2>
+            <tr>
+                <td>Customer Name</td>
+                <td>Product Name</td>
+                <td>Price</td>
+                <td>Quantity</td>
+            </tr>
+        </table> 
+
+
+        <script>
+            
+            $(document).ready(function()
+            {
+                $("#b1").click(function()
+                {
+                    let cName = $("#t1").val();
+                    let pName = $("#t2").val();
+                    let price = $("#t3").val();
+                    let quantity = $("#t4").val();
+
+                    let  str  = "<tr>  <td>"+cName+"</td>  <td>"+pName+"</td>  <td>"+price+"</td> <td>"+quantity+"</td>  </tr>";
+
+                    $("#tab1").append(str);
+                })
+            })
+        </script>
+        </fieldset>
+    </body>
+</html>

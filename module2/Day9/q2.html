@@ -1,0 +1,110 @@
+<!-- 2.   Update my example (WebPage3_DOM_Traversing.html) for the following requirement:
+
+	a.  Add "Remove"  hyperlink in the first column for each row
+	b.  Write the code to delete the selected row when the user click "Remove" link. -->
+
+    
+<!-- Create HTML Page to display Hello World message by using jQuery -->
+<html>
+    <head> 
+    </head>
+    <body>
+       <h3> jQuery Programming  - DOM Traversing</h3>
+       <hr />
+           
+        <input id="t1" placeholder="product name" />
+       <input id="t2" placeholder="unit price " />
+       <input id="t3" placeholder="quantity" />
+       <br></br> 
+   
+    <table id="table1" border="2" width="500px">
+       <tr>
+           <th></th>
+           <th>Product Name</th>
+           <th>Unit Price</th>
+           <th>Units In Stock</th>
+       </tr>
+       <tr>
+           <td><a href="#">Select</a> | <a href="#">Remove</a></td>		
+           <td>Printer</td>
+           <td>2500.00</td>
+           <td>20</td>
+       </tr>
+       <tr>
+       <td><a href="#">Select</a> | <a href="#">Remove</a></td>
+           <td>4GB-RAM</td>
+           <td>1200.00</td>
+           <td>23</td>
+       </tr>	 
+       <tr>
+       <td><a href="#">Select</a> | <a href="#">Remove</a></td>
+           <td>Printer</td>
+           <td>2500.00</td>
+           <td>20</td>
+       </tr>
+       <tr>
+       <td><a href="#">Select</a> | <a href="#">Remove</a></td>
+           <td>1TB Samsung HDD</td>
+           <td>4500.00</td>
+           <td>10</td>
+       </tr>
+       <tr>
+          <td><a href="#">Select</a> | <a href="#">Remove</a></td>
+           <td>32-GB Kingston USB</td>
+           <td>800.00</td>
+           <td>35</td>
+       </tr>
+       <tr>
+       <td><a href="#">Select</a> | <a href="#">Remove</a></td>
+           <td>Wifi Router</td>
+           <td>1800.00</td>
+           <td>15</td>
+       </tr> 
+       </table>  
+            
+    
+       
+       <script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+       
+       <script>
+       
+           $(document).ready(function()
+           {
+                var highlight = 0;
+                $("#table1 a:contains('Select')").click(function()
+                {
+                    $("#table1 tr").css("background-color", "white");
+                       let pname  =   $(this).parent().siblings().eq(0).text();
+                       let price  =   	  $(this).parent().siblings().eq(1).text();
+                       let qty  =   		  $(this).parent().siblings().eq(2).text();
+                       
+                       $("#t1").val(  pname  );
+                       $("#t2").val(  price  );
+                       $("#t3").val(  qty  );
+                       
+                       highlight = $(this).parent().parent().css("background-color", "pink");
+                    //    if(highlight != $(this).parent().parent().css("background-color", "white"))
+                    //    {
+                    //     $(this).parent().parent().css("background-color", "white");
+                    //    }
+                    //    else{
+                    //     $(this).parent().parent().css("background-color", "white");
+                    //    }                       
+                });
+
+                $("#table1 a:contains('Remove')").click(function()
+                {
+                    $(this).parent().parent().remove();
+                    $("#t1").val(  ""  );
+                    $("#t2").val(  ""  );
+                    $("#t3").val( "" );
+                })
+            
+           });
+                   
+       </script>
+       
+    </body>
+   </html>
+   
+   

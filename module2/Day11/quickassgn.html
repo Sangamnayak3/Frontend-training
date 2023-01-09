@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    </head>
+    <body>
+        <h2>Display CSV Values in List format using jQuery</h2>
+        <fieldset>
+            <label>Input String : </label>
+            <input type="text" id="t1"/>
+            <br/><br/><br/>
+            <button id="b1">Get Data</button>
+            <ul id="l1"></ul>
+
+            <script>
+                $(document).ready(function()
+                {
+                    $("#b1").click(function()
+                    {
+                        let str = $("#t1").val();
+                        let arr = str.split(',');
+                        for(let i of arr)
+                        {
+                        result = "<li> "+i+" <br/> </li>";
+                        $("#l1").append(result);
+                    }
+                    })
+                })
+            </script>
+        </fieldset>
+    </body>
+</html>

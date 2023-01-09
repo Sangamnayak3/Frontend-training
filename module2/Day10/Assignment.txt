@@ -1,0 +1,9 @@
+Q1 How to add CSS class to html tag using jQuery?
+__ jQuery has several methods for CSS manipulation. We will look at the following methods:
+   addClass() - Adds one or more classes to the selected elements.
+   removeClass() - Removes one or more classes from the selected elements.
+   toggleClass() - Toggles between adding/removing classes from the selected elements.
+
+Q2 How to apply effect based on width property?
+__ $(selector).animate(object, duration, callback);
+__ $("div").animate({ width: "0px"}, "slow" );

@@ -1,0 +1,74 @@
+<!-- 7.  	Create a web page to display technology names in the table format (Refer the Image: Assignment-7).
+
+		a. By default table should be empty
+		b. Show the data on button click
+		
+8.  	Create a web page to display technology names in the table format (Refer the Image: Assignment-8).
+			a.  Each row should  four items
+			b.  Next items should repeat in next row -->
+
+
+
+ <html>
+    <head>
+       <style>
+        table, td, tr, th
+        {
+            border:2px double red;
+            width: 4cm;
+            height: 0.4cm;
+        }
+       </style>
+    </head>
+    <body>
+        <h2>Operations on Arrays</h2><br/><hr/><br/>
+        <input type="button" value="Show Data" onclick="showdata()" />
+        <br/>
+        <table id="mytable" ></table>
+        <script>
+            function emptytable()
+            {
+                var empty = document.getElementById("mytable");
+                empty.innerHTML = empty.value;
+            }
+        </script>
+
+        <script>
+            function showdata()
+            {
+                var table = document.getElementById("mytable");
+
+                var row = table.insertRow(0);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                cell1.innerHTML = "1";
+                cell2.innerHTML = "HTML5";
+
+                var row = table.insertRow(1);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                cell1.innerHTML = "2";
+                cell2.innerHTML = "CSS3";
+
+                var row = table.insertRow(2);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                cell1.innerHTML = "3";
+                cell2.innerHTML = "jQuery";
+
+                var row = table.insertRow(3);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                cell1.innerHTML = "4";
+                cell2.innerHTML = "Angular JS";
+
+                var row = table.insertRow(4);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                cell1.innerHTML = "5";
+                cell2.innerHTML = "Bootstrap";
+            }
+        </script>
+    </body>
+
+ </html>           

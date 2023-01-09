@@ -1,0 +1,23 @@
+Q1 How to hide html element using JavaScript?
+__ In JavaScript, we can hide the elements using the style.display or by using the style.visibility. The visibility property in JavaScript is also used to      hide an element. The difference between the style.display and style.visibility is when using visibility: hidden, the tag is not visible, but space is        allocated. Using display: none, the tag is also not visible, but there is no space allocated on the page.
+
+Q2 How to change text color of all paragraphs in the document using JavaScript?
+__ To change the font color of all paragraphs using JavaScript, get the reference to the element, and assign the specific color to the element.style.color      property.
+	var paraArray=document.getElementsByTagName("p");
+	(or)
+	var paraArray=document.querySelectorAll("p");
+	for (let item of paraArray)
+	{
+	  item.style.color="colorName";
+	}
+
+Q3 How to change text color of all paragraphs in the document using jQuery?
+__ To change the font color of all paragraphs using jQuery, 
+	$("p").css("color","colorName");
+
+Q5 How to select all textboxes using jQuery selector?
+__ $("input[type=text], textarea").
+
+Q6 What is the difference between "this" and $(this) in jquery programming?
+__ In JavaScript, this keyword is used to refer to the object it belongs to. The value that this stores is the current execution context of the JavaScript      program.Thus, when used inside a function this‘s value will change depending on how that function is defined, how it is invoked and the default execution    context.
+   $(this): It also refers to the object it belongs to. Basically, both are the same. But when this keyword is used inside $(), then it becomes a jQuery        object, and now we can use all properties of jQuery on this method.	

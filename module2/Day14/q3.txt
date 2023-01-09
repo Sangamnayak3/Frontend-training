@@ -1,0 +1,41 @@
+$ git add emp.component.css
+
+sangnayak@USHYDSANGNAYA01 MINGW64 /c/Assignments/Module 2/Day14 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   emp.component.css
+        new file:   emp.component.html
+        new file:   emp.component.ts
+
+
+sangnayak@USHYDSANGNAYA01 MINGW64 /c/Assignments/Module 2/Day14 (master)
+$ git commit -mv "This is my first working in git"
+error: pathspec 'This is my first working in git' did not match any file(s) known to git
+
+sangnayak@USHYDSANGNAYA01 MINGW64 /c/Assignments/Module 2/Day14 (master)
+$ git commit -m "this is my first work with git"
+[master (root-commit) 8e7f7cd] this is my first work with git
+ Committer: Nayak <sangnayak@deloitte.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 emp.component.css
+ create mode 100644 emp.component.html
+ create mode 100644 emp.component.ts
+
+sangnayak@USHYDSANGNAYA01 MINGW64 /c/Assignments/Module 2/Day14 (master)
+$

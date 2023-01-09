@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+</head>
+<body>
+    Select Product  :  
+    <select id="s1"   onchange="product_List()" >
+        <option>--select category--</option>
+        <option>Laptop</option>
+        <option>Mobile Phones</option>
+        <option>Sound Sysytem</option>
+        <option>Headphones</option>
+        <option>Accessories</option>
+    </select>
+    <ol  id="list1">				 
+    </ol>
+
+    <script>
+        var laptop=["Hp","Dell","Lenevo","Acer","Asus"];
+        var mob=["Nokia","Samsung","Apple","OnePlus","Google"];
+        var sound=["Bose","Beats","JBL","Sony","Reconnect"];
+        var headp=["Boat","Skullcany","realme","mi","mivi"];
+        var acc=["Mouse","Keyboard","printer","scanner","pendrive"];
+        function product_List()
+        {
+            var product = document.getElementById("s1").value; 
+            if(product=="Laptop")
+            {
+                var  str  = "";
+				for(var i = 0; i < laptop.length;  i++)
+				{					      
+					str 	+=  "<li>" +  laptop[i] +  "</li>";	
+				}
+			 
+				var  listObj  =  document.getElementById("list1"); 
+				listObj.innerHTML = str;
+            } 
+            if(product=="Mobile Phones")
+            {
+                var  str  = "";
+				for(var i = 0; i < mob.length;  i++)
+				{					      
+					str 	+=  "<li>" +  mob[i] +  "</li>";	
+				}
+			 
+				var  listObj  =  document.getElementById("list1"); 
+				listObj.innerHTML = str;
+            } 
+            if(product=="Sound Sysytem")
+            {
+                var  str  = "";
+				for(var i = 0; i < sound.length;  i++)
+				{					      
+					str 	+=  "<li>" +  sound[i] +  "</li>";	
+				}
+			 
+				var  listObj  =  document.getElementById("list1"); 
+				listObj.innerHTML = str;
+            } 
+            if(product=="Headphones")
+            {
+                var  str  = "";
+				for(var i = 0; i < headp.length;  i++)
+				{					      
+					str 	+=  "<li>" +  headp[i] +  "</li>";	
+				}
+			 
+				var  listObj  =  document.getElementById("list1"); 
+				listObj.innerHTML = str;
+            }
+            if(product=="Accessories")
+            {
+                var  str  = "";
+				for(var i = 0; i < acc.length;  i++)
+				{					      
+					str 	+=  "<li>" +  acc[i] +  "</li>";	
+				}
+			 
+				var  listObj  =  document.getElementById("list1"); 
+				listObj.innerHTML = str;
+            }
+            
+        }
+    </script>
+</body>
+</html>

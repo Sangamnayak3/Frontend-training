@@ -1,0 +1,97 @@
+<!-- Update the above example to apply alternate items different colors using javascript
+Colors  :		Blue / Green -->
+
+<html>
+    <head></head>
+    <body>
+        <h3>JavaScript Programming -- Loops </h3>
+        <hr/>
+        
+        <input type="button"  value="While"  onclick="fn_while()"  />
+        <input type="button"  value="Do..While"  onclick="fn_dowhile()"  />
+        <input type="button"  value="For"  onclick="fn_for()"  />
+        
+        <ul id="u1">
+      </ul>
+        
+        <script>	
+            function    fn_while()
+           {	 
+                var  uObj  =  document.getElementById("u1");
+                
+                var i = 1;				
+                var str  = "";
+                
+                while(  i <=  4 )
+                {
+                    if(i%2 == 0)
+                {
+                    
+                    str  += "<li style='color:blue'>" + "Welcome to JavaScript -  " + i  +  "<br/>"; 
+                } 
+
+                else
+                {
+                    
+                    str  += "<li style='color:green'>" + "Welcome to JavaScript -  " + i  +  "<br/>";
+                }
+                }
+                
+                uObj.innerHTML = str; 
+            }
+            
+            function    fn_dowhile()
+           {	 
+                 var  uObj  =  document.getElementById("u1");
+                
+                var i = 4;				
+                var str  = "";
+                
+                do 
+                {
+                    if(i%2 == 0)
+                {
+                    
+                    str  += "<li style='color:blue'>" + "Welcome to JavaScript -  " + i  +  "<br/>"; 
+                } 
+
+                else
+                {
+                    
+                    str  += "<li style='color:green'>" + "Welcome to JavaScript -  " + i  +  "<br/>";
+                }
+                }while(  i >=  1 );
+                
+                uObj.innerHTML = str; 
+            }
+            
+            function    fn_for()
+           {	 
+                 var  uObj  =  document.getElementById("u1"); 		 
+                var str  = "";
+                
+                for(var i = 1; i <= 4; i++)
+                {
+
+                if(i%2 == 0)
+                {
+                    
+                    str  += "<li style='color:blue'>" + "Welcome to JavaScript -  " + i  +  "<br/>"; 
+                } 
+
+                else
+                {
+                    
+                    str  += "<li style='color:green'>" + "Welcome to JavaScript -  " + i  +  "<br/>";
+                }
+            }
+                
+                uObj.innerHTML = str; 
+            }
+            
+        </script>
+        
+     
+        
+    </body>
+</html>            

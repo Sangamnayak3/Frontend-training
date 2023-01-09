@@ -1,0 +1,29 @@
+<!-- b.  Function to find out power value  ( x power y) -->
+
+<html>
+    <head></head>
+    <body>
+        <fieldset>
+            <label>Enter Base</label>
+            <input type="text" id="base"/><br/><br/>
+            <label>Enter Power</label>
+            <input type="text" id="power"/><br/><br/>  
+            <input type="button" value="Answer" onclick="answer()"/><br/><br/>
+          
+        </fieldset>     
+        
+        <script>
+            function answer()
+            {
+                var x = document.getElementById("base").value;
+                var y = document.getElementById("power").value;
+                var res = x;
+                for (var i=1; i<y; i++)
+                {
+                     res=res*x;
+                }
+                console.log(res);
+            }
+        </script>
+    </body>
+</html>

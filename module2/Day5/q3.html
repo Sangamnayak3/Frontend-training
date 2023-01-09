@@ -1,0 +1,50 @@
+<html>
+	<head></head>
+	<body>
+		<h3>JavaScript Programming --   Dynamic DOM  </h3>
+		<hr/>
+        <label>empno : </label><input type="text" name="t1" id="t1"><br><br>
+        <label>ename : </label><input type="text" name="t2" id="t2"><br><br>
+        <label>job : </label><input type="text" name="t3" id="t3"><br><br>
+        <label>salary : </label><input type="text" name="t4" id="t4"><br><br>
+		 
+		<input type="button"   value="Add Rows"   onclick="fn_addRows()"  />
+	 
+		<br/><br/>
+        <hr>
+		<table  id="table1"  border="2"  width="500"  cellpadding="10" cellspacing="0">
+			<tr>
+					<th>empno</th>
+					<th>ename</th>
+					<th>job</th>
+                    <th>salary</th>
+			</tr>
+		</table>
+	 
+		
+		<script>	
+		 
+			  function fn_addRows()
+			  {				
+					var tableObj = document.getElementById("table1");
+			 
+					var row = tableObj.insertRow(-1);	// insert at last place
+
+					var cell1 = row.insertCell(0);
+					var cell2 = row.insertCell(1);
+					var cell3 = row.insertCell(2);
+                    var cell4 = row.insertCell(3);
+
+                    var t1Obj=document.getElementById("t1");
+                    var t2Obj=document.getElementById("t2");
+                    var t3Obj=document.getElementById("t3");
+                    var t4Obj=document.getElementById("t4");
+
+					cell1.innerHTML = t1Obj.value;
+					cell2.innerHTML = t2Obj.value;
+					cell3.innerHTML = t3Obj.value;
+                    cell4.innerHTML = t4Obj.value;
+			  }
+		</script>
+	</body>
+</html>

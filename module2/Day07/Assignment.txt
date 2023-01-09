@@ -1,0 +1,5 @@
+Q1 What is setInterval()  and setTimeout() methods in JavaScript?
+__ setTimeout () and setInterval () are JavaScript timing events. The JavaScript setTimeout () method executes a function after a period of milliseconds.    JavaScript setInterval () executes a function continuously after a certain period of milliseconds have passed.
+
+Q2 Why do we use callbacks in JavaScript?
+__ A callback is a function passed as an argument to another function. This technique allows a function to call another function. A callback function can    run after another function has finished.

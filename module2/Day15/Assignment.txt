@@ -1,0 +1,2 @@
+Q1 What is the role collaborators in github? Why  do we need to add collaborators to github repository?
+__ Collaborators are people that a repository administrator can add to work directly in the repository. These   collaborators have full access to the repository with limited restrictions. On the other hand, you can also have  contributors to the same repository, but these people are complete outsiders to your trusted team and the project  as a whole.

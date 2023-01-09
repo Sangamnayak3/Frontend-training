@@ -1,0 +1,74 @@
+<!-- 5.  Create a web page to display the following messages  in list format  :
+		Welcome to JavaScript - 1
+		Welcome to JavaScript - 2
+		Welcome to JavaScript - 3
+		.....
+		Welcome to JavaScript - 3
+		
+		Hint : Generate the output in <ul> tag.  Try with all loops.  Refer the image for sample output. -->
+
+            <html>
+                <head></head>
+                <body>
+                    <h3>JavaScript Programming -- Loops </h3>
+                    <hr/>
+                    
+                    <input type="button"  value="While"  onclick="fn_while()"  />
+                    <input type="button"  value="Do..While"  onclick="fn_dowhile()"  />
+                    <input type="button"  value="For"  onclick="fn_for()"  />
+                    
+                    <ul id="u1">
+                  </ul>
+                    
+                    <script>	
+                        function    fn_while()
+                       {	 
+                            var  uObj  =  document.getElementById("u1");
+                            
+                            var i = 1;				
+                            var str  = "";
+                            
+                            while(  i <=  4 )
+                            {
+                                str  += "<li>" + "Welcome to JavaScript -  " +  i  +  "<br/>";
+                                i++;
+                            }
+                            
+                            uObj.innerHTML = str; 
+                        }
+                        
+                        function    fn_dowhile()
+                       {	 
+                             var  uObj  =  document.getElementById("u1");
+                            
+                            var i = 4;				
+                            var str  = "";
+                            
+                            do 
+                            {
+                                str  += "<li>" + "Welcome to JavaScript -  " +  i  +  "<br/>";
+                                i--;
+                            }while(  i >=  1 );
+                            
+                            uObj.innerHTML = str; 
+                        }
+                        
+                        function    fn_for()
+                       {	 
+                             var  uObj  =  document.getElementById("u1"); 		 
+                            var str  = "";
+                            
+                            for(var i = 1; i <= 4; i++)
+                            {
+                                str  += "<li>" + "Welcome to JavaScript -  " + i  +  "<br/>"; 
+                            } 
+                            
+                            uObj.innerHTML = str; 
+                        }
+                        
+                    </script>
+                    
+                 
+                    
+                </body>
+            </html>            

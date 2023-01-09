@@ -1,0 +1,30 @@
+<!-- Create a web page to process product details using JavaScript. 
+     Calculate total amount based on the given values.  (Refer the Image) -->
+
+     <html>
+        <head>
+
+        </head>
+        <body>
+            <h2>Product's amount calculator</h2><hr/>
+            <fieldset>
+                Product Name : <input type="text" id="i1"/><br/><br/>
+                Unit Price : <input type="number" id="i2"/><br/><br/>
+                Quantity : <input type="number" id="i3"/><br/><br/>
+                <input type="button" value="Get Total" onclick="total()"/>
+                <p id="p1"></p>
+            </fieldset>
+            <script>
+                function total()
+                {
+                    var nameObj = document.getElementById("i1");
+                    var priceObj = document.getElementById("i2");
+                    var quantityObj = document.getElementById("i3");
+                    var paraObj = document.getElementById("p1");
+                    
+                    paraObj.innerHTML = "Total Price of " + quantityObj.value + " " + nameObj.value + " "+ "is Rs " + priceObj.value * quantityObj.value +".";
+                }
+            </script>
+
+        </body>
+     </html>

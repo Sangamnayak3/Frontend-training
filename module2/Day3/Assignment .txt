@@ -1,0 +1,21 @@
+1. What is BOM? Differnce between DOM and BOM?
+__The Browser Object Model (BOM) is used to interact with the browser.
+The default object of browser is window means you can call all the functions of window by specifying window or directly. For example: window.alert("hello javatpoint");  
+
+__Browsers feature a Browser Object Model that allows access and manipulation of the browser window. Using the BOM, developers can move the window, change text in the status bar, and perform other actions that do not directly relate to the page content.
+
+__The Document Object Model is an application programming interface (API) for HTML as well as XML.
+
+__The DOM maps out an entire page as a document composed of a hierarchy of nodes like a tree structure and using the DOMAPING nodes can be removed, added, and replaced.
+
+2. What is event target property in javascript?
+__The target event property returns the element object that triggered the event.
+
+		
+7.   What is difference between  indexOf()  and findIndex()
+__The indexOf() method returns the position of the first occurrence of a value in a string. The indexOf() method is case sensitive.
+
+The findIndex() method executes a function for each array element.
+The findIndex() method returns the index (position) of the first element that passes a test.
+The findIndex() method does not execute the function for empty array elements.
+The findIndex() method does not change the original array.

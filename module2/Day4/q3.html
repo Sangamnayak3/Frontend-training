@@ -1,0 +1,42 @@
+<!-- 3.  Create a web page to define the functions for the following requirements:
+
+			a.  Function to find out the no. of even numbers in the given array .  -->
+
+<html>
+    <head></head>
+    <body>
+        <p>Enter the numbers : </p>
+        <input type="text" id="i1" />
+        <input type="button" value="Enter" onclick="enternum()"/>
+        <input type="button" value="Even" onclick="fn_buttonClick()"/>
+        <p id="p1"></p>
+        
+        <script>
+            var array = [];
+            var count=0;
+            function enternum()
+            {
+                var num = document.getElementById("i1");               
+                array.push(num.value);               
+            }
+
+            function fn_buttonClick()
+            {
+                getEvenCount(array);
+                var show = document.getElementById("p1");
+                show.innerHTML = "There are " + count +" even numbers.";         
+            }
+
+            function getEvenCount(array)
+            {
+                for( var i=0; i < array.length; i++)
+                {
+                    if(array[i]%2==0)
+                    {
+                        count += 1;
+                    }
+                }  
+            }                 
+        </script>
+    </body>
+</html>            
