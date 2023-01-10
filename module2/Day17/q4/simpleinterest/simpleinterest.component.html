@@ -1,0 +1,12 @@
+<p>Simple Interest</p>
+<fieldset>
+   Principal Amount : <input type="number" [(ngModel)] = "principal_amount"/>
+   <br/><br/>
+   Annual Interest Rate : <input type="number" [(ngModel)] = "annual_interest_rate"/>
+   <br/><br/>
+   Period (in Years) : <input type="number" [(ngModel)] = "period"/>
+   <br/><br/>
+   <input type="button" value="calculate" (click)="calculate_click()" />
+   <br/><br/>
+   Total Amount :  <input type="text" [(ngModel)] = "final" readonly/>
+</fieldset>

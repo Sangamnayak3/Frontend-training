@@ -1,0 +1,12 @@
+p{
+    text-align: center;
+    font-size: larger;
+}
+
+fieldset{
+    width: 9cm;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    margin-left: 12cm;
+}

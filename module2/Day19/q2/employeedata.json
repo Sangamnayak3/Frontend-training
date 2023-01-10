@@ -1,0 +1,74 @@
+{
+  "employees": [
+    {
+      "empno": 1,
+      "ename": "Aman",
+      "job": "Analyst",
+      "sal": "50000",
+      "deptno": "101"
+    },
+    {
+      "empno": 2,
+      "ename": "Bindu",
+      "job": "Analyst",
+      "sal": "60000",
+      "deptno": "102"
+    },
+    {
+      "empno": 3,
+      "ename": "Charan",
+      "job": "Sr. Analyst",
+      "sal": "80000",
+      "deptno": "104"
+    },
+    {
+      "empno": 4,
+      "ename": "Dipika",
+      "job": "Team Lead",
+      "sal": "70000",
+      "deptno": "401"
+    },
+    {
+      "empno": 5,
+      "ename": "Eoin",
+      "job": "Manager",
+      "sal": "125000",
+      "deptno": "603"
+    },
+    {
+      "empno": 6,
+      "ename": "Fatima",
+      "job": "HR",
+      "sal": "90000",
+      "deptno": "503"
+    },
+    {
+      "empno": 7,
+      "ename": "Gaurav",
+      "job": "Tester",
+      "sal": "70000",
+      "deptno": "302"
+    },
+    {
+      "empno": 8,
+      "ename": "Haarika",
+      "job": "HR",
+      "sal": "80000",
+      "deptno": "502"
+    },
+    {
+      "empno": 9,
+      "ename": "Ishan",
+      "job": "Coach",
+      "sal": "80000",
+      "deptno": "702"
+    },
+    {
+      "ename": "Jatin",
+      "job": "Analyst",
+      "sal": "45000",
+      "deptno": "101",
+      "empno": 10
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+<h1 align="center">Question No. 2</h1>
+<hr/><br/>
+
+<input type="text" [(ngModel)] = "ename" placeholder="Enter the Employee Name"/>
+<input type="text" [(ngModel)] = "job" placeholder="Enter the Employee job"/>
+<input type="text" [(ngModel)] = "sal" placeholder="Enter the Employee salary"/>
+<input type="text" [(ngModel)] = "deptno" placeholder="Enter the Employee department number"/>
+<br/><br/>
+
+<input type="button" value="get data" (click)="getData_click()" />
+<input type="button" value="add data" (click)="postData_click()" />
+<br/><br/>
+
+<table border="2">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Job</th>
+        <th>Salary</th>
+        <th>Department</th>
+    </tr>
+
+    <tr *ngFor = "let item of array">
+        <td>{{item.empno}}</td>
+        <td>{{item.ename}}</td>
+        <td>{{item.job}}</td>
+        <td>{{item.sal}}</td>
+        <td>{{item.deptno}}</td>
+    </tr>
+</table>

@@ -1,0 +1,14 @@
+<p>Welcome to LOGIN Page</p>
+<fieldset>
+    <legend>User Loign</legend>
+    User Name  :  <input type="text"  [(ngModel)]="uid" />
+    <br/><br/>
+
+    Password  :  <input type="password" [(ngModel)]="pwd" />
+    <br/><br/>
+
+    <input type="button"  [disabled]="isLoginButtonDisabled"  value="Login" (click)="loginButton_click()" />
+    <p [style.color]="resultColor"> {{result}}  </p>
+</fieldset>
+
+ 

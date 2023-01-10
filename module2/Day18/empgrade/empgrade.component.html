@@ -1,0 +1,31 @@
+<h1 align="center">EMPLOYEE DETAILS</h1>
+<br/><hr/><br/>
+
+<table border="2" align="center">
+    <tr style="color:blue">
+        <th>S.No</th>
+        <th>Employee Name</th>
+        <th>Employee Grades</th>
+    </tr>
+    <tr *ngFor="let item of array">
+        <td>{{item.SNo}}</td>
+        <td>{{item.EName}}</td>
+        <td>{{item.Grades}}</td>
+    </tr>
+</table>
+
+<h2 align="center">Custom Pipes</h2>
+<hr/>
+
+<table border="2" align="center">
+    <tr style="color:blue">
+        <th>S.No</th>
+        <th>Employee Name</th>
+        <th>Employee Grades</th>
+    </tr>
+    <tr *ngFor="let item of array" >
+        <td>{{item.SNo}}</td>
+        <td>{{item.EName}}</td>
+        <td>{{item.Grades | grade }}</td>
+    </tr>
+</table>

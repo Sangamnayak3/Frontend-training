@@ -1,0 +1,29 @@
+<h3>CRUD </h3>
+ 
+<input type="text" placeholder="Deptno" [(ngModel)]="deptno" />
+<input type="text" placeholder="Dept Name" [(ngModel)]="dname" />
+<input type="text" placeholder="Location"  [(ngModel)]="loc" />
+<br/><br/>
+
+<input type="button" value="Add Dept"  (click)="addButton_click()"  />
+<input type="button" value="Update Dept"  (click)="updateButton_click()"  />
+<br/><br/>
+
+<table border="2" width="600" cellspacing="0" cellpadding="5">
+    <tr>
+      <th>Dept Number</th>
+      <th>Dept Name</th>
+      <th>Dept Location</th>
+      <th></th>
+    </tr>
+  
+    <tr *ngFor="let item of deptsArray; let i = index;">
+        <td>{{item.deptno}}</td>
+        <td>{{item.dname}}</td>
+        <td>{{item.loc}}</td> 
+        <td>
+            <a href="#" (click)="removeButton_click( item.deptno )" >Delete</a> |
+            <a href="#" (click)="selectButton_click( item.deptno )" >Select</a>  
+        </td>
+    </tr> 
+</table>

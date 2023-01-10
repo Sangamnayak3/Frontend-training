@@ -1,0 +1,27 @@
+Q1 What are the advantages of TypeScript over JavaScript?
+__  -TypeScript is a more dependable programming language and refactorable in comparison to Javascript
+-The TypeScript lets you know about the mistake at arrangement time. While JavaScript lets you know at the runtime.
+-TypeScript overcomes the challenges of JavaScript for large-level complex applications. So, TypeScript saves development time and allows developers to become more efficient.
+-The difference between TypeScript and JavaScript is that. TypeScript compiles the code into JavaScript before execution.
+-TypeScript offers a variable declaration, and type system, which JavaScript doesn’t offer.
+ Basically TypeScript will help you in code organizing.
+-TypeScript uses concepts like interfaces and types to describe the data. While JavaScript has no such concept   available.
+
+Q2 How to use *ngIf in Angular?
+__ A shorthand form of the directive, *ngIf="condition", is generally used, provided as an attribute of the anchor element for the inserted template. Angular expands this into a more explicit version, in which the anchor element is contained in an <ng-template> element.
+
+Q3 How to hide a html element using Angular ?
+__ The ng-hide directive hides the HTML element if the expression evaluates to true.
+ng-hide is also a predefined CSS class in AngularJS, and sets the element's display to none.
+
+Q5 What  is interface in TypeScript? Why do we use?
+__ Interfaces, in the simplest words, describe the structure of the object which means it describes how the object should look like. In TypeScript, we can work with “Interfaces”. In TypeScript, an interface just contains the definition of methods and properties, not their implementation. It is the functionality of the class that carries  out the connection between the interface by providing the connection with all the parameters of the interface.
+
+While creating a new interface, the interface keyword must be used. This keyword must be followed by the interface name. The curly brackets should contain the shape of an object, the properties, and the types. The properties and types are specified as “key: value” pairs while creating the Interface.
+Below is an example of simple TypeScript interfaces. 
+
+Q8 What is default export in TypeScript?
+__ Default exports are marked with the keyword default and there can only be one default export per module.5. What is interface in TypeScript? Why do we use?
+__ An Interface is a structure which acts as a contract in our application. It defines the syntax for classes to follow, means a class which implements an interface is bound to implement all its members.
+__ We should use Interface in TypeScript for validating the structure of an object in the case where we are creating an object, passing object as parameters. The interface is only available in TypeScript code when it compiles JavaScript code its existence disappears it doesn't make our final Source code heavier.
+

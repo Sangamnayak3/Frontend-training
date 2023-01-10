@@ -1,0 +1,5 @@
+1. What is data binding in Angular? Why do we use it?
+__ It is a technique to link the data(*.ts) to view layer(*.html). In other words, its syncronizes the data between component and view.
+
+Q2 How to get index of the current item while using *ngFor?
+__ Steps to get index of ngFor element in Angular Declare a variable inside *ngFor directive using let or as keyword. for instance say indexofelement or simply i. Assign the variable value to index. And display the index of ngFor element using angular expression.
